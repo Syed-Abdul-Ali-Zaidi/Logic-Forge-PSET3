@@ -25,3 +25,11 @@ def scrambled_keyword(s : str,p : str):
             result += [i]
 
     return result
+
+# Done!
+# s = 'cbaebabacd'
+# p = 'abc'
+# output = scrambled_keyword(s,p)
+# print("S:",s)
+# print("P:",p)
+# print("Output:",output)
