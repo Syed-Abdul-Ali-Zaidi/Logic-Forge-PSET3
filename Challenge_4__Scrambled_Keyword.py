@@ -6,12 +6,12 @@ def scrambled_keyword(s : str,p : str):
     freq_anum = {}
     for i in p:
         if i in freq_anum:
-            freq_anum += 1
+            freq_anum[i] += 1
         else:
             freq_anum[i] = 1
 
-    for i in range(len(s) - substring_len):
-        substr = s[i : i+3]
+    for i in range(len(s) - substring_len+1):
+        substr = s[i : i+substring_len]
 
         # Counting frequency of every char of "substr"
         freq_s = {}
