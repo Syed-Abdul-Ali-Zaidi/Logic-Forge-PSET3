@@ -1,19 +1,21 @@
-first = input()
+first = input()     # Taking first line input
 first = first.split(' ')
 N = int(first[0])
 K = int(first[1])
 Q = int(first[2])
 
-temp = input()
+temp = input()     # Taking Temperatures input
 temp = temp.split(' ')
 temp = [int(i) for i in temp]
 
 queries = []
+# Taking queries input
 for i in range(Q):
     query = input()
     query = query.split(' ')
     queries.append(query)
 
+# Processing Alert day for each day
 alert = ['No Alert' for i in range(N)]
 for i in range(N-1):
     for j in range(i+1,N):
@@ -21,6 +23,7 @@ for i in range(N-1):
             alert[i] = j
             break
 
+# Processing queries
 for i in queries:
     if i[0] == 'NEXT':
         alert_day = alert[int(i[1])]
@@ -34,6 +37,4 @@ for i in queries:
                 count += 1
         print(count)
 
-print('Temp:',temp)
-print('Alert',alert)
 # Done!
