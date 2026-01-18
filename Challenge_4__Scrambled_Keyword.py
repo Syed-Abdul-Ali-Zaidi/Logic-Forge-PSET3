@@ -1,4 +1,6 @@
-def scrambled_keyword(s : str,p : str):
+def scrambled_keyword():
+    s = input()
+    p = input()
     substring_len = len(p)
     result = []
 
@@ -24,12 +26,6 @@ def scrambled_keyword(s : str,p : str):
         if freq_s == freq_anum:
             result += [i]
 
-    return result
+    print(result)
 
-# Done!
-# s = 'cbaebabacd'
-# p = 'abc'
-# output = scrambled_keyword(s,p)
-# print("S:",s)
-# print("P:",p)
-# print("Output:",output)
+scrambled_keyword()
