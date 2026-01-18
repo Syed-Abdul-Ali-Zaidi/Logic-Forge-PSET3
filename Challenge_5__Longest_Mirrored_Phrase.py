@@ -1,4 +1,5 @@
-def longest_palindromic_substring(s):
+def longest_palindromic_substring():
+    s = input()
     Max = ''
     for i in range(len(s)):
         # Checking while Centre is single character
@@ -18,16 +19,7 @@ def longest_palindromic_substring(s):
             L -= 1
             R += 1
 
-    return Max
+    print(Max)
 
 # Done!
-# string = 'babad'
-# output = longest_palindromic_substring(string)
-# print("Input:",string)
-# print("Output:",output)
-#
-# string = 'bab'
-# output = longest_palindromic_substring(string)
-# print("Input:",string)
-# print("Output:",output)
-
+longest_palindromic_substring()
